@@ -1,0 +1,46 @@
+/* Media query for Tablets (800px and above) */
+@media only screen and (min-width: 800px) {
+    .logo img {
+        width: 70px;
+    }
+    .our_work .box {
+        width: 40%;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.464);
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s;
+        }
+}
+/* phone */
+@media only screen and (max-width: 765px) {
+    /* Styles for mobile phones */
+    .logo img {
+        width: 70px;
+    }
+    .our_work .box {
+        width: 90%;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.464);
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s;
+        }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
