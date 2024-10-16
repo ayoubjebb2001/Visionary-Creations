@@ -1,12 +1,70 @@
 footer{
 
-background-color:rgb(225, 225, 225);
-color: black;
+background-color: rgb(66, 64, 64);
+color: white;
 }
 
 .Div-Parent-Footer{
 
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* permettre aux sections de se réarranger si la fenêtre est trop petite */
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
+
+ul{
+    list-style-type: none; /* Supprimer les puces dial les listes */
+    padding: 0;
+    maring;
+    
+}
+
+a{
+    text-decoration:none;
+    color: aliceblue;
+}
+
+a:hover { 
+    
+    text-decoration: underline;
+}
+
+#copyrights{
+    text-align: center;
+    
+}
+
+#newsletter{
+
+    text-align: center;
+}
+
+input{
+    height: 35px;
+    width: 220px;
+}
+button{
+    height: 35px;
+    width: 100px;
+    background: rgb(79, 156, 69);
+
+    height: 35px;
+        border: none;
+        position: absolute;
+        font-weight: 600;
+        cursor: pointer;
+        color: #fff;
+    
+}
+
+#Line {
+    margin-top:20px;
+    width:100%;
+    height:1px;;
+    background: rgb(255, 255, 255);
 
 }
