@@ -4,6 +4,100 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FBF4F4F0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Default display for desktop */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* MEDIA QUERY for Mobile/Tablets */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FBF4F4F0;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Checkbox to toggle the menu */
+    .menu-checkbox {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 18px;
+        color: #333;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    .menu-checkbox:checked ~ ul {
+        display: flex;
+    }
+}
+
+/* MEDIA QUERY for Desktop */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex; /* Ensure the nav is always visible on desktop */
+        position: static; /* Reset position */
+        flex-direction: row; /* Horizontal alignment for desktop */
+        width: auto; /* Default width */
+        background-color: transparent; /* No background on desktop */
+    }
+
+    .menu-icon {
+        display: none; /* Hide menu icon on desktop */
+    }
+
+    /* Hide the checkbox on desktop */
+    .menu-checkbox {
+        display: none;
+    }
+}
 .main-wrap{
     width: 100%;
     background: #fff;
