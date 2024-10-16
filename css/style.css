@@ -10,101 +10,119 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+
+/* HEADER STYLE */
 header {
     background-color: #FBF4F4F0;
-    padding: 10px 20px;
+    padding: 10px 80px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-nav ul {
+    align-items: center; 
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+    
+    }
+    .logo img {
+    width: 100px;
+    }
+    nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Default display for desktop */
-}
-
-nav ul li {
+    display: flex;
+    }
+    nav ul li {
     margin-left: 20px;
-}
-
-nav ul li a {
+    }
+    nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 14px;
-}
-
-/* MEDIA QUERY for Mobile/Tablets */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide menu by default on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #FBF4F4F0;
-        border-top: 1px solid #e0e0e0;
     }
+/* FINISH HEADER STYLE */
 
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
+/* style for hero section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #FBF4F4F0;
+    height: 100vh;
+  }
+  
+  .content-box {
+    max-width: 50%;
+  }
+  
+  .content-box h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .content-box p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-box {
+    max-width: 50%;
+  }
+  
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
     }
+  
+    .content-box,
+    .image-box {
+      max-width: 100%;
+    }
+  
+    .content-box h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content-box p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* style for hero section */
 
-    /* Checkbox to toggle the menu */
-    .menu-checkbox {
-        display: none;
-    }
 
-    .menu-icon {
-        display: inline-block;
-        cursor: pointer;
-        font-size: 18px;
-        color: #333;
-    }
 
-    /* Show the menu when the checkbox is checked */
-    .menu-checkbox:checked ~ ul {
-        display: flex;
-    }
-}
+/* STYLE for FOOTER */
 
-/* MEDIA QUERY for Desktop */
-@media (min-width: 769px) {
-    nav ul {
-        display: flex; /* Ensure the nav is always visible on desktop */
-        position: static; /* Reset position */
-        flex-direction: row; /* Horizontal alignment for desktop */
-        width: auto; /* Default width */
-        background-color: transparent; /* No background on desktop */
-    }
-
-    .menu-icon {
-        display: none; /* Hide menu icon on desktop */
-    }
-
-    /* Hide the checkbox on desktop */
-    .menu-checkbox {
-        display: none;
-    }
-}
 .main-wrap{
     width: 100%;
     background: #fff;
 }
 .footer-wrap{
     position: relative;
-    margin-top:320px; /*you can remove or edit this margin-top property when you are using this footer on your project. */
+    
     width:100%;
     padding:40px;
     background: rgb(46, 44, 44);
@@ -204,3 +222,62 @@ form .btn{
     margin-left: 20px;
     color: #fff;
     padding-left: 37%
+}
+
+/* STYLE for FOOTER */
+
+/* MEDIA QUERY for Mobile/Tablets */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FBF4F4F0;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Checkbox to toggle the menu */
+    .menu-checkbox {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 18px;
+        color: #333;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    .menu-checkbox:checked ~ ul {
+        display: flex;
+    }
+}
+
+/* MEDIA QUERY for Desktop */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex; /* Ensure the nav is always visible on desktop */
+        position: static; /* Reset position */
+        flex-direction: row; /* Horizontal alignment for desktop */
+        width: auto; /* Default width */
+        background-color: transparent; /* No background on desktop */
+    }
+
+    .menu-icon {
+        display: none; /* Hide menu icon on desktop */
+    }
+
+    /* Hide the checkbox on desktop */
+    .menu-checkbox {
+        display: none;
+    }
+}
