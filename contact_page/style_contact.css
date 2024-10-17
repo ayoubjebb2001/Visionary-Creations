@@ -1,18 +1,25 @@
 
-.heder_contact{
-    /* background-image: url('images/contact_us.jpg'); */
+.body{
+    padding: 0px;
+    margin: 0px;
+}
+.header_contact{
     width: 100%;
     height: 215px;
-    /* background-color: yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     left: 0;
+    background-image: url('/contact_page/img_contact/contact_us2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.home_1 img{
-    width: 100%;
-    height: 90%;
+.contact .header_contact h1{
+    font-size: 70px;
+    color: rgb(233, 228, 228);
+    text-shadow: 0 0 7px rgb(109, 100, 100);
 }
 .home_2 {
     width: 50%;
@@ -24,7 +31,7 @@
 .meduim{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     margin-top: 60px;
     margin-left: 60px;
@@ -33,17 +40,42 @@
 .meduim .Coordonnees{
     margin-top: 50px;
 }
+.meduim .Coordonnees h2{
+    font-size: 30px;
+}
+.meduim .Coordonnees .informations{
+    font-size: 18px;
+}
+.meduim .Coordonnees .p1{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1,5;
+}
 .login{
-    border: 1px solid grey;
+    border: none;
     padding: 25px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.127);
 }
-.class1{
+.class_1 {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    padding-bottom: 10px;
 }
-.login input{
+.class_1 .info_1 input{
+    width: 250px; 
+    height: 55px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.127);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+}
+.login .info input{
     width: 550px;
     height: 55px;
+    font-size: 16px;
+    padding: 10px;
 }
 .login input.msg{
     position: relative;
@@ -52,8 +84,17 @@
 .info{
     padding-bottom: 10px;
 }
+.info input{
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.127);
+    border: none;
+    outline: none;
+}
 .send button{
-    background-color: rgb(69, 127, 208);
+    color: white;
+    background-color: rgb(109, 113, 118);
+    border: none;
+    padding: 10px;
+    font-size: 18px ;
 }
 .map{
     margin: 60px;
