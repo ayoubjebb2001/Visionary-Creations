@@ -44,8 +44,7 @@
         text-align: center;
     }
 
-    .Botona,
-    .cta-btn {
+    .btn-more,.cta-btn {
         display: inline-block;
         padding: 12px 25px;
         background-color: #172121;
@@ -55,8 +54,7 @@
         transition: background-color 0.3s ease;
     }
 
-    .Botona,
-    .cta-btn:hover {
+    .btn-more,.cta-btn:hover {
         background-color: #234343;
     }
 
@@ -93,8 +91,8 @@
         background-color: #cf93a9;
     }
 
-    .content-box,
-    .Botona {
+    .content-box
+     {
         text-align: center;
     }
 
@@ -149,8 +147,8 @@
         text-align: center;
     }
 
-    .Botona,
-    .cta-btn {
+    
+    .btn-more,.cta-btn {
         display: inline-block;
         padding: 12px 25px;
         background-color: #172121;
@@ -160,13 +158,13 @@
         transition: background-color 0.3s ease;
     }
 
-    .Botona,
-    .cta-btn:hover {
+    
+    .btn-more,.cta-btn:hover {
         background-color: #234343;
     }
 
-    .content-box,
-    .Botona {
+    .content-box
+     {
         text-align: center;
     }
 
@@ -289,8 +287,7 @@
         line-height: 1.6;
     }
 
-    .Botona,
-    .cta-btn {
+    .btn-more,.cta-btn {
         display: inline-block;
         padding: 12px 25px;
         background-color: #172121;
@@ -300,8 +297,8 @@
         transition: background-color 0.3s ease;
     }
 
-    .Botona,
-    .cta-btn:hover {
+    
+    .btn-more, .cta-btn:hover {
         background-color: #234343;
     }
 
