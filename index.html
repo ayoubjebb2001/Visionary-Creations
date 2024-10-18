@@ -1,31 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <title>visionarycreations</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Nous sommes une agence spécialisée dans la digitalisation des entreprises.
+    Notre mission est de fournir des solutions innovantes pour aider les entreprises à améliorer
+    leurs processus internes et à optimiser leur présence en ligne.">
+    <meta name="keywords"
+        content="agence,digitale,seo,web,design,marketing,social media,developpement,UI,UX,conception web,graphique,ads,e-commerce">
+    <meta name='robots' content='index, follow'>
+    <meta http-equiv="content-language" content="fr">
+    <title>Visionary Creations | Agence Marketing digitale , Référencement Web et Créations web</title>
+    <!--Style -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header-STYLE.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Style-->
 </head>
 
 <body>
 
     <!-- Start Header -->
-     <header>
+    <header>
         <div class="logo">
             <img src="images-protfolio/logo-1.png" alt="logo">
         </div>
-        <nav>
+        <nav class="nav-screen-pc">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="portfolio.html">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#Login">Login</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services-page.html">Services</a></li>
+            <li><a href="portfolio.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
-    </header> 
+        <div class="mobile">
+            <div class="button" id="button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav-mobil" id="nav-mobi">
+                <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services-page.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            let btn = document.getElementById("button") ;
+            let navMobile = document.getElementById("nav-mobi") ;
+
+           
+            btn.onclick = ()=>{
+                if( navMobile.style.display === "none" || navMobile.style.display === "" ){
+                     navMobile.style.display = "block";
+                }
+                else navMobile.style.display = "none"; 
+            }
+        </script>
+    </header>
     <!-- End Header -->
 
+    <!--Start Main Section -->
+     <main>
     <!--  Start Hero Section -->
     <section class="hero-section">
         <div class="content-box">
@@ -33,8 +76,10 @@
                 Nous vous aidons à réussir vos ambitions
             </h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint tempore explicabo error
-                corporis. Eveniet accusantium laborum sint architecto voluptatum.
+                Nous accompagnons les entreprises dans leur transformation digitale en proposant des solutions
+                innovantes pour optimiser leurs performances, renforcer leur présence en ligne, et accroître leur
+                productivité.
+
             </p>
             <a href="services.html" class="cta-btn"> Découvrir</a>
         </div>
@@ -43,61 +88,163 @@
         </div>
     </section>
     <!-- End Hero Section -->
-    <div class="main-wrap">
-        <div class="footer-wrap">
-            <div class="footer-wrap-1">
-                <div class="footer-section">
-                    <h1>Navigation</h1>
-                    <a href="index.html">Accueil</a>
-                    <a href="">Services</a>
-                    <a href="portfolio.html">Projets</a>
-                    <a href="#">Contact</a>
-                </div>
-                <div class="footer-section">
-                    <h1>Où on se trouve?</h1>
-                    <a href="#">Place Al-Joulane, 51, Rabat 10200</a>
-                    <a href="#">contact@visionarycreations.ma</a>
-                    <a href="#">+212666548548</a>
-                </div>
-                <div class="footer-section">
-                    <h1>Legal</h1>
-                    <a href="#">Mentions Légales</a>
-                    <a href="#">Paramétres de cookies</a>
-                </div>
-                <div class="footer-section">
-                    <h1>Restez connecté!</h1>
-                    <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles.</p>
-                    <form action="">
-                        <input type="email" name="email" id="email" placeholder="Enter Email Address">
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-wrap-2">
-                <div class="line"></div>
-                <div class="social-link">
-                    <a href="#">
-                        <img src="images/fb.png" alt="Facebook">
-                    </a>
-                    <a href="#">
-                        <img src="images/google.png" alt="Google">
-                    </a>
-                    <a href="#">
-                        <img src="images/linkedin.png" alt="linkedin">
-                    </a>
-                    <a href="#">
-                        <img src="images/twitter.png" alt="twitter">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="first-box">
-                <p href="#">Visionary Creations 2024 - Made by Loren Class</p>
-            </div>
 
+    <!-- service section -->
+
+
+    <section class="services">
+        <h2>Nos Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="images/img_creation_service.svg" alt="Digitalisation des entreprises qui fait la vente">
+                <h3>Digitalisation des entreprises (Ventes)</h3>
+                <p>Transformez votre entreprise avec des solutions digitales adaptées pour optimiser vos ventes en
+                    ligne.</p>
+            </div>
+            <div class="service-box">
+                <img src="images/img_developpement.svg" alt="Digitalisation de processus interne">
+                <h3>Digitalisation des processus internes</h3>
+                <p>Optimisez vos opérations internes avec des outils digitaux qui améliorent l'efficacité et réduisent
+                    les coûts.</p>
+            </div>
+            <div class="service-box">
+                <img src="images/img_diffusion_contenu.svg" alt="Gestion des réseaux sociaux">
+                <h3>Gestion des réseaux sociaux</h3>
+                <p>Renforcez votre présence en ligne et engagez votre audience grâce à une gestion experte des réseaux
+                    sociaux.</p>
+            </div>
         </div>
+        <a href="services-page.html" class="btn-more">Voir Plus</a>
+    </section>
+
+    <!-- End service section -->
+
+    <!-- about section -->
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/announce.jpg" alt="Image de l'entreprise">
+            </div>
+            <div class="about-content">
+                <h2>À propos de nous</h2>
+                <p>Nous sommes une agence de digitalisation dédiée à transformer les entreprises à travers des solutions
+                    numériques innovantes. Avec une expertise en gestion des processus internes, digitalisation des
+                    entreprises, et gestion des réseaux sociaux, nous aidons nos clients à atteindre leurs objectifs
+                    stratégiques.</p>
+                <a href="aboutpage.html" class="btn">Voir Plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End about  section -->
+
+    <!-- Team  section -->
+
+    <section class="team">
+        <h2>Notre équipe</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Membre de l'équipe">
+                <h3>Ayoub OUMHA</h3>
+                <p>CEO & Fondateur</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Membre de l'équipe">
+                <h3>Mohamed ZOUHAIRI </h3>
+                <p>Responsable de la digitalisation</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.jpg" alt="Membre de l'équipe">
+                <h3>Souad Souad</h3>
+                <p>Designer UI/UX</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team4.jpeg" alt="Membre de l'équipe">
+                <h3>Aoub JEBBOURI</h3>
+                <p>Développeur Full-Stack</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Feedback  section -->
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Ce que disent nos clients</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Grâce à cette agence, nous avons pu transformer nos processus internes et améliorer notre
+                        efficacité. Une équipe à l'écoute et très réactive !"</p>
+                    <h4>- Jean Dupont, PDG de XYZ Entreprise</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"La digitalisation de notre stratégie de vente a été un véritable succès, et nous avons vu nos
+                        résultats augmenter rapidement. Je recommande vivement."</p>
+                    <h4>- Sarah Bensaid, Responsable Marketing chez ABC Corp</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Une excellente gestion des réseaux sociaux ! Notre visibilité en ligne a connu une hausse
+                        spectaculaire, et cela nous a permis d'acquérir de nouveaux clients."</p>
+                    <h4>- Mohamed Zerhouni, Fondateur de StartupTech</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Feedback  section -->
+     </main>
+     <!--End Main-->
+    <!--Footer Section-->
+    <footer>
+        <div>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Où on se trouve?</h2>
+            <p>Place Al-Joulane, 51, Rabat 10200</p>
+            <p>Email : contact@visionarycreations.ma</p>
+            <p>Téléphone : +212 666548548</p>
+        </div>
+
+        <div>
+            <h2>Legal</h2>
+            <ul>
+                <li><a href="legal.html">Mentions Légales</a></li>
+                <li><a href="cookies.html">Paramètres de cookies</a></li>
+            </ul>
+        </div>
+
+        <div id="newsletter">
+            <h2>Restez connecté!</h2>
+            <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles.</p>
+            <form>
+                <input type="email" placeholder="Enter Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <div id="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div id="copyright">
+        <p>&copy; Visionary Creations 2024 - Made by Loren Class</p>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/f2675a1df8.js" crossorigin="anonymous"></script>
 
 </html>
