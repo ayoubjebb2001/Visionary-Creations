@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Nous sommes une agence spécialisée dans la digitalisation des entreprises.
+    Notre mission est de fournir des solutions innovantes pour aider les entreprises à améliorer
+    leurs processus internes et à optimiser leur présence en ligne.">
+    <meta name="keywords"
+        content="agence,digitale,seo,web,design,marketing,social media,developpement,UI,UX,conception web,graphique,ads,e-commerce">
+    <meta name='robots' content='index, follow'>
+    <meta http-equiv="content-language" content="fr">
+    <title>Visionary Creations | Agence Marketing digitale , Référencement Web et Créations web</title>
+    <!--Style -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header-STYLE.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Style-->
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="logo">
+            <img src="images-protfolio/logo-1.png" alt="logo">
+        </div>
+        <nav class="nav-screen-pc">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services-page.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="mobile">
+            <div class="button" id="button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav-mobil" id="nav-mobi">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services-page.html">Services</a></li>
+                    <li><a href="portfolio.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            let btn = document.getElementById("button");
+            let navMobile = document.getElementById("nav-mobi");
+
+
+            btn.onclick = () => {
+                if (navMobile.style.display === "none" || navMobile.style.display === "") {
+                    navMobile.style.display = "block";
+                }
+                else navMobile.style.display = "none";
+            }
+        </script>
+    </header>
+    <!-- End Header -->
+    <main>
+        <div class="login-container">
+            <form class="login-form">
+                <h2>Connexion</h2>
+                <input type="email" placeholder="Adresse e-mail" required>
+                <input type="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </main>
+    <!--Footer Section-->
+    <footer>
+        <div>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Où on se trouve?</h2>
+            <p>Place Al-Joulane, 51, Rabat 10200</p>
+            <p>Email : contact@visionarycreations.ma</p>
+            <p>Téléphone : +212 666548548</p>
+        </div>
+
+        <div>
+            <h2>Legal</h2>
+            <ul>
+                <li><a href="legal.html">Mentions Légales</a></li>
+                <li><a href="cookies.html">Paramètres de cookies</a></li>
+            </ul>
+        </div>
+
+        <div id="newsletter">
+            <h2>Restez connecté!</h2>
+            <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles.</p>
+            <form>
+                <input type="email" placeholder="Enter Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <div id="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div id="copyright">
+        <p>&copy; Visionary Creations 2024 - Made by Loren Class</p>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f2675a1df8.js" crossorigin="anonymous"></script>
+
+</html>

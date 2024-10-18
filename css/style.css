@@ -52,7 +52,7 @@ html {
 }
 
 .cta-btn:hover {
-    background-color: hsl(180, 31%, 20%);
+    background-color: #234343;
 }
 
 .image-box {
@@ -90,13 +90,13 @@ html {
 .services {
     text-align: center;
     padding: 50px 0;
-    background-color: #FBF0F4; 
+    background-color: #FBF0F4;
 }
 
 .services h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: #2e2c2c; 
+    color: #2e2c2c;
 }
 
 .service-container {
@@ -122,7 +122,7 @@ html {
 
 .service-box h3 {
     font-size: 1.2em;
-    color: #2e2c2c; 
+    color: #2e2c2c;
     margin-bottom: 10px;
 }
 
@@ -132,11 +132,12 @@ html {
 }
 
 .service-box:hover {
-    background-color: #2e2c2c; 
+    background-color: #2e2c2c;
     color: white;
 }
 
-.service-box:hover h3, .service-box:hover p {
+.service-box:hover h3,
+.service-box:hover p {
     color: white;
 }
 
@@ -165,7 +166,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    background-color: #FBF4F4F0; 
+    background-color: #FBF4F4F0;
 }
 
 .about-container {
@@ -224,7 +225,7 @@ html {
 .team {
     text-align: center;
     padding: 50px 0;
-    background-color: #FBF4F4F0; 
+    background-color: #FBF4F4F0;
 }
 
 .team h2 {
@@ -269,7 +270,8 @@ html {
 
 /* Section Testimonials ( FEEDBACKAT )  */
 .testimonials {
-    background-color: #FBF4F4F0;  /* Même couleur de fond */
+    background-color: #FBF4F4F0;
+    /* Même couleur de fond */
     padding: 60px 0;
     text-align: center;
 }
