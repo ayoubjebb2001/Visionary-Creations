@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Nous sommes une agence spécialisée dans la digitalisation des entreprises.
+    Notre mission est de fournir des solutions innovantes pour aider les entreprises à améliorer
+    leurs processus internes et à optimiser leur présence en ligne.">
+    <meta name="keywords"
+        content="agence,digitale,seo,web,design,marketing,social media,developpement,UI,UX,conception web,graphique,ads,e-commerce">
+    <meta name='robots' content='index, follow'>
+    <meta http-equiv="content-language" content="fr">
+    <title>Visionary Creations | Agence Marketing digitale , Référencement Web et Créations web</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/header-STYLE.css">
+    <link rel="stylesheet" href="css/Sstyle-services.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="images-protfolio/logo-1.png" alt="logo">
+        </div>
+        <nav class="nav-screen-pc">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services-page.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </nav>
+        <div class="mobile">
+            <div class="button" id="button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav-mobil" id="nav-mobi">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services-page.html">Services</a></li>
+                    <li><a href="portfolio.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#Login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            let btn = document.getElementById("button");
+            let navMobile = document.getElementById("nav-mobi");
+
+
+            btn.onclick = () => {
+                if (navMobile.style.display === "none" || navMobile.style.display === "") {
+                    navMobile.style.display = "block";
+                }
+                else navMobile.style.display = "none";
+            }
+        </script>
+    </header>
+    <!-- services -->
+    <section id="services" class="services">
+
+        <div class="info">
+            <h1>NOS SERVICES</h1>
+            <P>Des services à fort impact pour votre entreprise</P>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="detail">
+                    <h4>Marketing du contenu </h4>
+                    <P>Notre équipe crée du contenu engageant et partageable qui résonne avec votre public, génère du
+                        trafic organique</P>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <div class="detail">
+                    <h4>Design Graphique</h4>
+                    <P>Libérez le pouvoir du storytelling visuel avec nos services de design graphique experts, conçus
+                        pour élever votre marque et captiver.
+                    </P>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="detail">
+                    <h4>Digital Marketing </h4>
+                    <P>Élevez la présence en ligne de votre marque avec nos stratégies de marketing numérique basées sur
+                        les données. Du SEO au marketing de contenu.</P>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="detail">
+                    <h4>Conception Web</h4>
+                    <P>Nous sommes spécialisés dans la création de sites web visuellement époustouflants et conviviaux,
+                        alignés avec l'identité de votre marque et offrant une expérience exceptionnelle.</P>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-gem"></i>
+                </div>
+                <div class="detail">
+                    <h4>Identité de Marque </h4>
+                    <P>Cela implique de créer une identité unique et reconnaissable qui différencie la marque de ses
+                        concurrents et résonne avec le public cible.
+                    </P>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div class="detail">
+                    <h4>IT Consulting</h4>
+                    <P>Le conseil en informatique, ou consulting en technologies de l'information, se réfère à la
+                        pratique de fournir des services de conseil et de mise en œuvre</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <div>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Où on se trouve?</h2>
+            <p>Place Al-Joulane, 51, Rabat 10200</p>
+            <p>Email : contact@visionarycreations.ma</p>
+            <p>Téléphone : +212 666548548</p>
+        </div>
+
+        <div>
+            <h2>Legal</h2>
+            <ul>
+                <li><a href="legal.html">Mentions Légales</a></li>
+                <li><a href="cookies.html">Paramètres de cookies</a></li>
+            </ul>
+        </div>
+
+        <div id="newsletter">
+            <h2>Restez connecté!</h2>
+            <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles.</p>
+            <form>
+                <input type="email" placeholder="Enter Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <div id="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div id="copyright">
+        <p>&copy; Visionary Creations 2024 - Made by Loren Class</p>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f2675a1df8.js" crossorigin="anonymous"></script>
+</html>

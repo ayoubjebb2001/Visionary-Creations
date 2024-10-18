@@ -2,37 +2,142 @@
 <html lang="fr">
 
 <head>
+    <meta http-equiv="content-language" content="fr">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos de nous</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Nous sommes une agence spécialisée dans la digitalisation des entreprises.
+    Notre mission est de fournir des solutions innovantes pour aider les entreprises à améliorer
+    leurs processus internes et à optimiser leur présence en ligne.">
+    <meta name="keywords"
+        content="agence,digitale,seo,web,design,marketing,social media,developpement,UI,UX,conception web,graphique,ads,e-commerce">
+    <meta name='robots' content='index, follow'>
+    <title>Visionary Creations | Agence Marketing digitale , Référencement Web et Créations web</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header-STYLE.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
 <body>
-    <section class="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>À propos de nous</h2>
-                <p>
-                    Nous sommes une agence spécialisée dans la digitalisation des entreprises.
-                    Notre mission est de fournir des solutions innovantes pour aider les entreprises à améliorer
-                    leurs processus internes et à optimiser leur présence en ligne.
-                </p>
-                <p>
-                    Grâce à une équipe expérimentée dans la gestion des réseaux sociaux, la digitalisation des ventes et
-                    la transformation digitale, nous travaillons en partenariat avec nos clients pour atteindre leurs
-                    objectifs
-                    commerciaux.
-                </p>
-                <a href="services.html" class="btn">Voir nos services</a>
-            </div>
-            <div class="about-image">
-                <img src="images/Teamwork_in_IT.jpg" alt="Image À propos">
-            </div>
+    <!-- Start Header -->
+    <header>
+        <div class="logo">
+            <img src="images-protfolio/logo-1.png" alt="logo">
         </div>
-    </section>
+        <nav class="nav-screen-pc">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services-page.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="mobile">
+            <div class="button" id="button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav-mobil" id="nav-mobi">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services-page.html">Services</a></li>
+                    <li><a href="portfolio.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            let btn = document.getElementById("button");
+            let navMobile = document.getElementById("nav-mobi");
+
+
+            btn.onclick = () => {
+                if (navMobile.style.display === "none" || navMobile.style.display === "") {
+                    navMobile.style.display = "block";
+                }
+                else navMobile.style.display = "none";
+            }
+        </script>
+    </header>
+    <!-- End Header -->
+    <!-- Main Start -->
+    <main>
+        <section class="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>À propos de nous</h2>
+                    <p>
+                        Nous sommes une agence spécialisée dans la digitalisation des entreprises.
+                        Notre mission est de fournir des solutions innovantes pour aider les entreprises à améliorer
+                        leurs processus internes et à optimiser leur présence en ligne.
+                    </p>
+                    <p>
+                        Grâce à une équipe expérimentée dans la gestion des réseaux sociaux, la digitalisation des
+                        ventes et
+                        la transformation digitale, nous travaillons en partenariat avec nos clients pour atteindre
+                        leurs
+                        objectifs
+                        commerciaux.
+                    </p>
+                    <a href="services-page.html" class="btn">Voir nos services</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/Teamwork_in_IT.jpg" alt="Image À propos">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main END-->
+    <!--Footer Section-->
+    <footer>
+        <div>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Où on se trouve?</h2>
+            <p>Place Al-Joulane, 51, Rabat 10200</p>
+            <p>Email : contact@visionarycreations.ma</p>
+            <p>Téléphone : +212 666548548</p>
+        </div>
+
+        <div>
+            <h2>Legal</h2>
+            <ul>
+                <li><a href="legal.html">Mentions Légales</a></li>
+                <li><a href="cookies.html">Paramètres de cookies</a></li>
+            </ul>
+        </div>
+
+        <div id="newsletter">
+            <h2>Restez connecté!</h2>
+            <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles.</p>
+            <form>
+                <input type="email" placeholder="Enter Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <div id="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div id="copyright">
+        <p>&copy; Visionary Creations 2024 - Made by Loren Class</p>
+    </div>
 </body>
 
 </html>

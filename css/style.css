@@ -10,44 +10,11 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins' sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-/* HEADER STYLE */
-header {
-    background-color: #FBF4F4F0;
-    padding: 10px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
 
-}
-
-.logo img {
-    width: 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-}
-
-/* FINISH HEADER STYLE */
-
-/* style for hero section */
+/*  HERO section */
 .hero-section {
     display: flex;
     align-items: center;
@@ -117,7 +84,7 @@ nav ul li a {
     }
 }
 
-/* style for hero section */
+/* HERO section */
 
 /* Services Section */
 .services {
@@ -173,7 +140,7 @@ nav ul li a {
     color: white;
 }
 
-/* Button Voir Plus */
+
 .btn-more {
     display: inline-block;
     margin-top: 30px;
@@ -190,7 +157,7 @@ nav ul li a {
     color: #fff;
 }
 
-
+/* Services Section */
 
 /* Section About */
 .about {
@@ -250,7 +217,7 @@ nav ul li a {
     background-color: #444;
 }
 
-
+/* About Section */
 
 
 /* Section Team */
@@ -343,330 +310,3 @@ nav ul li a {
 }
 
 
-
-/* STYLE for FOOTER */
-
-footer {
-    background-color: rgb(46, 44, 44);
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-footer div {
-    flex: 1;
-    margin: 0 20px;
-}
-
-footer h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    margin-bottom: 8px;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-footer ul li a:hover {
-    color: #c65f48;
-}
-
-footer p {
-    color: #ffffff;
-}
-
-#newsletter input,
-#newsletter button {
-    padding: 10px;
-    margin-top: 10px;
-}
-
-#newsletter button {
-    background-color: rgb(79, 156, 69);
-    color: #333;
-    border: none;
-    cursor: pointer;
-}
-
-#newsletter button:hover {
-    background-color: #df3b16;
-}
-
-#social-icons {
-    text-align: center;
-    background-color: rgb(46, 44, 44);
-    /* Ajout de la couleur de fond */
-    padding: 10px 0;
-}
-
-#social-icons a {
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-#social-icons a:hover {
-    color: #c65f48;
-}
-
-#copyright {
-    text-align: center;
-    color: #ccc;
-    margin-top: 0;
-    padding-top: 10px;
-    background-color: rgb(12, 12, 12);
-}
-
-#copyright p {
-    color: #ffffff;
-    padding-bottom: 20px;
-}
-
-#copyright {
-    text-align: center;
-    color: #ccc;
-    margin-top: 0;
-    padding-top: 10px;
-    background-color: rgb(12, 12, 12);
-}
-
-#copyright p {
-    color: #ffffff;
-    padding-bottom: 20px;
-}
-
-#social-icons {
-    text-align: center;
-    background-color: rgb(46, 44, 44);
-    /* Ajout de la couleur de fond */
-    padding: 10px 0;
-}
-
-
-
-/* STYLE for FOOTER */
-
-/* MEDIA QUERY for Mobile/Tablets */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        /* Hide menu by default on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #FBF4F4F0;
-        border-top: 1px solid #e0e0e0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    /* Checkbox to toggle the menu */
-    .menu-checkbox {
-        display: none;
-    }
-
-    .menu-icon {
-        display: inline-block;
-        cursor: pointer;
-        font-size: 18px;
-        color: #333;
-    }
-
-    /* Show the menu when the checkbox is checked */
-    .menu-checkbox:checked~ul {
-        display: flex;
-    }
-}
-
-/* MEDIA QUERY for Desktop */
-@media (min-width: 769px) {
-    nav ul {
-        display: flex;
-        /* Ensure the nav is always visible on desktop */
-        position: static;
-        /* Reset position */
-        flex-direction: row;
-        /* Horizontal alignment for desktop */
-        width: auto;
-        /* Default width */
-        background-color: transparent;
-        /* No background on desktop */
-    }
-
-    .menu-icon {
-        display: none;
-        /* Hide menu icon on desktop */
-    }
-
-    /* Hide the checkbox on desktop */
-    .menu-checkbox {
-        display: none;
-    }
-}
-
-@media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-        background-color: rgb(46, 44, 44);
-        color: #fff;
-        padding: 20px;
-    }
-
-
-    footer ul {
-        list-style: none;
-        padding: 0;
-    }
-
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-        background-color: rgb(46, 44, 44);
-        color: #fff;
-        padding: 20px;
-    }
-
-
-    footer ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    #copyright {
-        text-align: center;
-        color: #ccc;
-        margin-top: 0;
-        padding-top: 10px;
-        background-color: rgb(12, 12, 12);
-    }
-
-    #copyright p {
-        color: #ffffff;
-        padding-bottom: 20px;
-    }
-
-    #social-icons {
-        text-align: center;
-        background-color: rgb(46, 44, 44);
-        /* Ajout de la couleur de fond */
-        padding: 10px 0;
-    }
-
-}
-
-@media (min-width: 1025px) {
-    footer {
-        background-color: rgb(46, 44, 44);
-        color: #fff;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    footer div {
-        flex: 1;
-        margin: 0 20px;
-    }
-
-    footer h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    footer ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    footer ul li {
-        margin-bottom: 8px;
-
-    }
-
-    footer ul li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    footer ul li a:hover {
-        color: #c65f48;
-    }
-
-    footer p {
-        color: #ffffff;
-    }
-
-    #newsletter input,
-    #newsletter button {
-        padding: 10px;
-        margin-top: 10px;
-    }
-
-    #newsletter button {
-        background-color: rgb(79, 156, 69);
-        color: #333;
-        border: none;
-        cursor: pointer;
-    }
-
-    #newsletter button:hover {
-        background-color: #df3b16;
-    }
-
-    #social-icons {
-        text-align: center;
-        background-color: rgb(46, 44, 44);
-        /* Ajout de la couleur de fond */
-        padding: 10px 0;
-    }
-
-    #social-icons a {
-        margin: 0 10px;
-        color: #fff;
-        text-decoration: none;
-        font-size: 24px;
-    }
-
-    #social-icons a:hover {
-        color: #c65f48;
-    }
-
-    #copyright {
-        text-align: center;
-        color: #ccc;
-        margin-top: 0;
-        padding-top: 10px;
-        background-color: rgb(12, 12, 12);
-        ;
-    }
-
-    #copyright p {
-        color: #ffffff;
-        padding-bottom: 20px;
-    }
-
-
-}
