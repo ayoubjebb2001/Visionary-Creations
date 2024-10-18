@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visionary Creations Header</title>
     <style>
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -31,7 +33,8 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: flex; /* Default display for desktop */
+            display: flex;
+            /* Default display for desktop */
         }
 
         nav ul li {
@@ -47,7 +50,8 @@
         /* MEDIA QUERY for Mobile/Tablets */
         @media (max-width: 768px) {
             nav ul {
-                display: none; /* Hide menu by default on mobile */
+                display: none;
+                /* Hide menu by default on mobile */
                 flex-direction: column;
                 position: absolute;
                 top: 60px;
@@ -75,7 +79,7 @@
             }
 
             /* Show the menu when the checkbox is checked */
-            .menu-checkbox:checked ~ ul {
+            .menu-checkbox:checked~ul {
                 display: flex;
             }
         }
@@ -83,15 +87,21 @@
         /* MEDIA QUERY for Desktop */
         @media (min-width: 769px) {
             nav ul {
-                display: flex; /* Ensure the nav is always visible on desktop */
-                position: static; /* Reset position */
-                flex-direction: row; /* Horizontal alignment for desktop */
-                width: auto; /* Default width */
-                background-color: transparent; /* No background on desktop */
+                display: flex;
+                /* Ensure the nav is always visible on desktop */
+                position: static;
+                /* Reset position */
+                flex-direction: row;
+                /* Horizontal alignment for desktop */
+                width: auto;
+                /* Default width */
+                background-color: transparent;
+                /* No background on desktop */
             }
 
             .menu-icon {
-                display: none; /* Hide menu icon on desktop */
+                display: none;
+                /* Hide menu icon on desktop */
             }
 
             /* Hide the checkbox on desktop */
@@ -101,6 +111,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -117,4 +128,5 @@
         </nav>
     </header>
 </body>
+
 </html>

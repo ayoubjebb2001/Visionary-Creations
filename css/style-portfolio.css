@@ -1,100 +1,112 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     background-color: #FBF4F4;
-    font-family: "Poppins", sans-serif;        
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     box-sizing: border-box;
     font-size: 1rem;
 
-}   
+}
 
 /* HEADER STYLE */
 header {
-background-color: #FBF4F4F0;
-padding: 10px 80px;
-display: flex;
-justify-content: space-between;
-align-items: center; 
-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+    background-color: #FBF4F4F0;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
 
 }
+
 .logo img {
-width: 100px;
+    width: 100px;
 }
+
 nav ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
+
 nav ul li {
-margin-left: 20px;
+    margin-left: 20px;
 }
+
 nav ul li a {
-text-decoration: none;
-color: #333;
-font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
 }
+
 /* FINISH HEADER STYLE */
 
 /* OUR WORK STYLE */
-.our_work .title   {
+.our_work .title {
 
-background-image: url("images-protfolio/image-work/5.jpg");
+    background-image: url("images-protfolio/image-work/5.jpg");
 
 }
-.our_work .title  h2 {
-text-align: center;
-font-size: 60px;
-padding: 10px;
-margin: 0;
+
+.our_work .title h2 {
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+    margin: 0;
 }
 
 .our_work .title p {
-text-align: center;
-padding: 20px;
+    text-align: center;
+    padding: 20px;
 
 }
-.our_work  .container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-padding: 30px;          
-justify-content: space-around;
+
+.our_work .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-around;
 }
+
 .our_work .box {
-max-width: 300px;
-margin-top: 20px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.464);
-padding: 10px;
-border-radius: 5px;
-cursor: pointer;
-transition: .2s;
+    max-width: 300px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.464);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
 }
-.our_work .box:hover  {
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.645);
+
+.our_work .box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.645);
 }
-.our_work .box:hover img  {
-transform: scale(1.1);
+
+.our_work .box:hover img {
+    transform: scale(1.1);
 }
+
 .our_work .box .img {
-width: 100%;
-height: 250px;
-overflow: hidden;  
-border-radius: 10px;
-border: 1px solid rgba(0, 0, 0, 0.103);
-display: flex;
-align-items: center;
-justify-content: center;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .our_work .box img {
-height: 100%;
-background-position: center;
-transition: .2s;
+    height: 100%;
+    background-position: center;
+    transition: .2s;
 
 
 
@@ -143,13 +155,14 @@ footer p {
     color: #ffffff;
 }
 
-#newsletter input, #newsletter button {
+#newsletter input,
+#newsletter button {
     padding: 10px;
     margin-top: 10px;
 }
 
 #newsletter button {
-    background-color: rgb(79, 156, 69); 
+    background-color: rgb(79, 156, 69);
     color: #333;
     border: none;
     cursor: pointer;
@@ -161,7 +174,8 @@ footer p {
 
 #social-icons {
     text-align: center;
-    background-color: rgb(46, 44, 44); /* Ajout de la couleur de fond */
+    background-color: rgb(46, 44, 44);
+    /* Ajout de la couleur de fond */
     padding: 10px 0;
 }
 
@@ -180,13 +194,14 @@ footer p {
     text-align: center;
     color: #ccc;
     margin-top: 0;
-    padding-top: 10px; 
-    background-color: rgb(12, 12, 12);            ;
+    padding-top: 10px;
+    background-color: rgb(12, 12, 12);
+    ;
 }
 
 #copyright p {
-  color: #ffffff;
-  padding-bottom: 20px;
+    color: #ffffff;
+    padding-bottom: 20px;
 }
 
- /* * finish footer style */ 
+/* * finish footer style */
